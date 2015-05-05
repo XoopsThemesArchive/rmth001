@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="Red México Soft (http://www.redmexico.com.mx)" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td><table width="900" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="274"><img src="<{$xoops_imageurl}>images/logo.gif" width="274" height="64" /></td>
+        <td align="left" valign="bottom" nowrap="nowrap"><table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><a href="<{$xoops_url}>"><img src="<{$xoops_imageurl}>images/but_home.gif" width="103" height="23" border="0" /></a></td>
+            <td><a href="<{$xoops_url}>/modules/rmgallery"><img src="<{$xoops_imageurl}>images/but_gal.gif" width="103" height="23" border="0" /></a></td>
+            <td><a href="<{$xoops_url}>/modules/newbb"><img src="<{$xoops_imageurl}>images/but_forum.gif" width="103" height="23" border="0" /></a></td>
+            <td><a href="<{$xoops_url}>/modules/rmdp"><img src="<{$xoops_imageurl}>images/but_downs.gif" width="103" height="23" border="0" /></a></td>
+            <td><a href="<{$xoops_url}>/modules/news/"><img src="<{$xoops_imageurl}>images/but_news.gif" width="103" height="23" border="0" /></a></td>
+            <td><a href="<{$xoops_url}>/modules/contact/"><img src="<{$xoops_imageurl}>images/but_contact.gif" width="103" height="23" border="0" /></a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="7"><img src="<{$xoops_imageurl}>images/logo_sep.gif" width="274" height="7" /></td>
+        <td height="7" bgcolor="#3B7CC2"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td class="barblue"><div id="infos" class="infos"></div></td>
+  </tr>
+  <tr>
+    <td class="main_table"><table width="890" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="4" colspan="3"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1" /></td>
+        </tr>
+      <tr>
+        <td valign="top" class="td_block_left" style="color: #006699;">
+		<{foreach item=block from=$xoops_lblocks}>
+			<{include file="rmth001/block_left.html"}>
+		<{/foreach}>		</td>
+        <td valign="top" class="contenido_xoops"><center><{$xoops_banner}></center><br>
+		<{$xoops_contents}><br>
+		<{foreach item=block from=$xoops_ccblocks}>
+		<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="head"><img align="absmiddle" src="<{$xoops_imageurl}>images/ball_16.gif"> <{$block.title}></td>
+          </tr>
+		  <tr>
+		   <td><{$block.content}></td>
+		  </tr>
+        </table>
+		<{/foreach}><br>
+		<table width="100%"  border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td width="50%" valign="top">
+			<{foreach item=block from=$xoops_clblocks}>
+				
+			<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="head"><img align="absmiddle" src="<{$xoops_imageurl}>images/ball_16.gif"> <{$block.title}></td>
+              </tr>
+              <tr>
+                <td class="<{cycle values="even,odd"}>"><{$block.content}></td>
+              </tr>
+            </table>
+			<{/foreach}>			</td>
+            <td width="50%" valign="top">
+			<{foreach item=block from=$xoops_crblocks}>
+				
+			<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="head"><img align="absmiddle" src="<{$xoops_imageurl}>images/ball_16.gif"> <{$block.title}></td>
+              </tr>
+              <tr>
+                <td class="<{cycle values="even,odd"}>"><{$block.content}></td>
+              </tr>
+            </table>
+			<{/foreach}>			</td>
+          </tr>
+        </table>		</td>
+        <td valign="top" class="table_block"><table class="table_block" width="170" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+				<td valign="bottom" height="11"><img src="<{$xoops_imageurl}>images/tbl_bkr_top.gif" width="170" height="11" /></td>
+			</tr>
+			<tr>
+              <td class="td_bkr_main">
+                <{foreach item=block from=$xoops_rblocks}>
+                <span style="font-size: 12px; color: #FFFFFF; font-weight: bold; "><{$block.title}></span><br />
+                <{$block.content}>
+                <{/foreach}>                </td>
+            </tr>
+			<tr>
+				<td valign="top" height="11"><img src="<{$xoops_imageurl}>images/tbl_bkr_bot.gif" width="170" height="11" /></td>
+			</tr>
+            </table></td>
+      </tr>
+      
+    </table>      </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="900" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="10" rowspan="2"><img src="<{$xoops_imageurl}>images/foot_left.gif" width="10" height="40" /></td>
+        <td height="22" class="foot_bgt">Design by <a href="http://www.redmexico.com.mx">Red M&eacute;xico Soft</a>. </td>
+        <td width="46" rowspan="2"><img src="<{$xoops_imageurl}>images/foot_right.gif" width="46" height="40" /></td>
+      </tr>
+      <tr>
+        <td height="18" class="foot_bgb">CopyRight &copy; 2005. <a href="http://www.xoops-mexico.net">XOOPS-MEXICO.NET</a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;Powered by <a href="http://www.xoops.org">XOOPS</a>. &nbsp;&nbsp;&nbsp;|&nbsp; Hosted by <a href="http://www.redmexico.com.mx">Red M&eacute;xico Soft </a> </td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

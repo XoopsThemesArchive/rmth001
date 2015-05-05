@@ -1,0 +1,16 @@
+<table cellspacing="0" width="100%" cellpadding="0" border="0">
+  <tr>
+    <td class="even">
+      <img align="absmiddle" src="<{$xoops_imageurl}>images/ball_16.gif"> <a class="menuTop" href="<{$xoops_url}>/"><{$block.lang_home}></a>
+	 </td></tr>
+      <!-- start module menu loop -->
+      <{foreach item=module from=$block.modules}>
+	  <tr><td class="even">
+      <img align="absmiddle" src="<{$xoops_imageurl}>images/ball_16.gif"> <strong><a class="menuMain" href="<{$xoops_url}>/modules/<{$module.directory}>/"><{$module.name}></a></strong>
+        <{foreach item=sublink from=$module.sublinks}>
+          <br /><img style="padding-left: 18px; " src="<{$xoops_imageurl}>images/silb_16.gif" border='0' align="absmiddle"> <a class="menuSub" href="<{$sublink.url}>"><{$sublink.name}></a>
+        <{/foreach}>
+	  </td></tr>
+      <{/foreach}>
+      <!-- end module menu loop -->
+</table>

@@ -1,0 +1,39 @@
+<table cellspacing="0" width="100%" cellpadding="0">
+  <tr>
+    <td class="even">
+	<img src="<{$xoops_imageurl}>images/info.gif">
+	<a class="menuTop" href="<{$xoops_url}>/user.php"><{$block.lang_youraccount}></a>
+	</td></tr>
+	<td class="even">
+	<img src="<{$xoops_imageurl}>images/edit.gif">
+	<a href="<{$xoops_url}>/edituser.php"><{$block.lang_editaccount}></a>
+	</td></tr>
+    <td class="even">
+	<img src="<{$xoops_imageurl}>images/notify.gif">
+	<a href="<{$xoops_url}>/notifications.php"><{$block.lang_notifications}></a>
+	</td></tr>
+	<td class="even">
+	<img src="<{$xoops_imageurl}>images/key.gif">
+	<a href="<{$xoops_url}>/user.php?op=logout"><{$block.lang_logout}></a>
+	</td></tr>
+	<td class="even">
+	<img src="<{$xoops_imageurl}>images/mail.gif">
+    <a class="highlight" href="<{$xoops_url}>/viewpmsg.php"><{$block.lang_inbox}> (<span style="color:#FFFFFF; font-weight: bold;"><{$block.new_messages}></span>)</a>
+    </td></tr>
+	<td class="even">
+	<img src="<{$xoops_imageurl}>images/home.gif">
+     <a onclick="this.style.behavior='url(#default#homepage)';&#10;this.setHomePage('http://www.futbolmexicano.net');" 
+                        href="http://www.futbolmexicano.net#">Hacer pagina de inicio</a>
+	</td></tr>
+	<td class="even">
+	<img src="<{$xoops_imageurl}>images/bmark.gif">
+	<a href="javascript:addbookmark()">Agregar a favoritos</a>
+ 	</td></tr>
+	<td class="even">
+	<img src="<{$xoops_imageurl}>images/admin.gif">
+      <{if $xoops_isadmin}>
+        <a href="<{$xoops_url}>/admin.php"><{$block.lang_adminmenu}></a>
+      <{/if}>
+    </td>
+  </tr>
+</table>
